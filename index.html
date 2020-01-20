@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
-  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
   <title>Axion</title>
 </head>
 <body class="container">
@@ -18,48 +18,80 @@
       <a href="" class="nav-menu__link">HELP</a>
     </nav>
     <nav class="side-menu">
-      <input type="text" class="search">
-      <input type="button" class="entrance" value="SIGN IN">
-      <input type="button" class="cart" value="CART">
-      <input type="button" class="language">
+      <label class="search-label">
+        <input type="text" class="search">
+      </label>
+      <label class="entrance-label">
+        <input type="button" class="entrance" value="SIGN IN">
+      </label>
+      <label class="cart-label">
+        <input type="button" class="cart" value="CART">
+      </label>
+      <label class="language-label">
+        <input type="button" class="language">
+      </label>
     </nav>
   </header>
   <section class="main-page">
-    <h1 class="title">Legendary footwear reborn.</h1>
-    <input type="button" class="shop-button" value="Shop now">
+    <div class="main-page__head">
+      <h1 class="title">Legendary<br>footwear<br>reborn.</h1>
+      <div class="shop-button-wrap">
+        <input type="button" class="shop-button" value="Shop now">
+      </div>
+    </div>
     <div class="recommended">
       <h1 class="recommended__title">Featured product</h1>
       <div class="recommended__products">
         <div class="product">
-          <div class="product__picture"></div>
+          <div class="product__picture product__picture-atlasblack"></div>
           <p class="product__name">Atlas Black/Rasta Axion</p>
           <div class="product__specifications">
             <p class="price">$89.00</p>
-            <div class="color"></div>
+            <div class="color">
+              <div class="color__circle color-grey"></div>
+              <div class="color__circle color-black color__main"></div>
+              <div class="color__circle color-red"></div>
+              <div class="color__circle color-yellow"></div>
+            </div>
           </div>
         </div>
         <div class="product">
-          <div class="product__picture"></div>
+          <div class="product__picture product__picture-camel"></div>
           <p class="product__name">Camel/Chili Pepper Axion</p>
           <div class="product__specifications">
             <p class="price">$74.00</p>
-            <div class="color"></div>
+            <div class="color">
+              <div class="color__circle color-grey"></div>
+              <div class="color__circle color-beige color__main"></div>
+              <div class="color__circle color-red"></div>
+              <div class="color__circle color-yellow"></div>
+            </div>
           </div>
         </div>
         <div class="product">
-          <div class="product__picture"></div>
+          <div class="product__picture product__picture-mandelsmoke"></div>
           <p class="product__name">Mandel Smoke/Rust Axion</p>
           <div class="product__specifications">
             <p class="price">$69.00</p>
-            <div class="color"></div>
+            <div class="color">
+              <div class="color__circle color-grey"></div>
+              <div class="color__circle color-vinous color__main"></div>
+              <div class="color__circle color-blue"></div>
+              <div class="color__circle color-yellow"></div>
+            </div>
           </div>
         </div>
         <div class="product">
-          <div class="product__picture"></div>
+          <div class="product__picture product__picture-cloud"></div>
           <p class="product__name">Cloud/Electric Blue Axion</p>
           <div class="product__specifications">
             <p class="price">$69.00</p>
-            <div class="color"></div>
+            <div class="color">
+              <div class="color__circle color-grey"></div>
+              <div class="color__circle color-lightblue color__main"></div>
+              <div class="color__circle color-red"></div>
+              <div class="color__circle color-yellow"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -68,52 +100,62 @@
   <section class="video-clip">
     <div class="clip"></div>
     <div class="clip-content">
-      <h1 class="clip-content__title"></h1>
-      <p class="clip-content__text"></p>
-      <input type="button" class="clip-content__learn-more">
+      <h1 class="clip-content__title">Legendary<br>footwear reborn</h1>
+      <p class="clip-content__text"> We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.</p>
+      <div class="learn-more">
+        <input type="button" class="learn-more__button" value="Learn more">
+      </div>
     </div>
   </section>
   <section class="stories">
     <h1 class="stories__recent">Recent stories</h1>
     <div class="stories__content">
       <div class="story">
-        <div class="story__picture"></div>
+        <div class="story__picture story__picture-PresentsJustinAnagoa"></div>
         <h3 class="story__title">Presents Justin Anagoa</h3>
         <p class="story__text">
           Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.
         </p>
-        <input type="button" class="story__more-button" value="Learn more">
+        <div class="story__button">
+          <input type="button" class="story__button-more" value="Learn more">
+        </div>
         <p class="story__date">11.08.2018</p>
       </div>
       <div class="story">
-        <div class="story__picture"></div>
+        <div class="story__picture story__picture-FirstFrontsideflip"></div>
         <h3 class="story__title">First Frontside flip</h3>
         <p class="story__text">
           Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day.<br>
           Photo:Yoon Sul
         </p>
-        <input type="button" class="story__more-button" value="Learn more">
+        <div class="story__button">
+          <input type="button" class="story__button-more" value="Learn more">
+        </div>
         <p class="story__date">17.08.2018</p>
       </div>
       <div class="story">
-        <div class="story__picture"></div>
+        <div class="story__picture story__picture-KevinBaekkelisPro"></div>
         <h3 class="story__title">Kevin Baekkel is Pro</h3>
         <p class="story__text">
           Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.
         </p>
-        <input type="button" class="story__more-button" value="Learn more">
+        <div class="story__button">
+          <input type="button" class="story__button-more" value="Learn more">
+        </div>
         <p class="story__date">11.08.2018</p>
       </div>
     </div>
     <div class="stories-photo">
       <p class="stories-photo__tag">#AXIONfootwear</p>
-      <img src="" alt="" class="stories-photo__img">
-      <img src="" alt="" class="stories-photo__img">
-      <img src="" alt="" class="stories-photo__img">
-      <img src="" alt="" class="stories-photo__img">
-      <img src="" alt="" class="stories-photo__img">
-      <img src="" alt="" class="stories-photo__img">
-      <img src="" alt="" class="stories-photo__img">
+      <div class="stories-photo__collection">
+        <img src="./img/alex-perez-628222-unsplash.png" alt="" class="stories__photo-img">
+        <img src="./img/jeff-kepler-1073379-unsplash.png" alt="" class="stories__photo-img">
+        <img src="./img/john-fornander-743940-unsplash.png" alt="" class="stories__photo-img">
+        <img src="./img/oldskool-photography-301154-unsplash.png" alt="" class="stories__photo-img">
+        <img src="./img/oliwier-gesla-1058814-unsplash.png" alt="" class="stories__photo-img">
+        <img src="./img/ruben-gutierrez-754545-unsplash.png" alt="" class="stories__photo-img">
+        <img src="./img/brooke-cagle-241293-unsplash.png" alt="" class="stories__photo-img">
+      </div>
     </div>
   </section>
   <footer class="footer">
@@ -129,7 +171,7 @@
     </div>
     <div class="customer-service">
       <h2 class="customer-service__title">CUSTOMER SERVICE</h2>
-      <nav>
+      <nav class="footer-nav">
         <a href="" class="footer-nav__link">Contact us</a>
         <a href="" class="footer-nav__link">Help/FAQ</a>
         <a href="" class="footer-nav__link">Shipping</a>
@@ -140,7 +182,7 @@
     </div>
     <div class="miscellaneous">
       <h2 class="miscellaneous__title">MISCELLANEOUS</h2>
-      <nav>
+      <nav class="footer-nav">
         <a href="" class="footer-nav__link">About Us</a>
         <a href="" class="footer-nav__link">Careers</a>
         <a href="" class="footer-nav__link">Privacy Policy</a>
@@ -149,19 +191,27 @@
         <a href="" class="footer-nav__link">Homepage US/UK</a>
       </nav>
     </div>
-    <div class="footer-nav">
-      <h2 class="footer-nav__title">NEWSLETTER SIGN UP</h2>
-      <p>Get 10% Off Your Next Order!</p>
-      <input type="button" value="SIGN UP">
+    <div class="newsletter-signup">
+      <h2 class="newsletter-signup__title">NEWSLETTER SIGN UP</h2>
+      <p class="newsletter-signup__subtitle">Get 10% Off Your Next Order!</p>
+      <input type="button" class="newsletter-signup__button" value="SIGN UP">
       <div class="social-networks">
-        <a href="" class="social-networks__facebook"></a>
-        <a href="" class="social-networks__twitter"></a>
-        <a href="" class="social-networks__instagram"></a>
-        <a href="" class="social-networks__pinterest"></a>
+        <a href="">
+          <div class="social-networks__facebook"></div>
+        </a>
+        <a href="">
+          <div class="social-networks__twitter"></div>
+        </a>
+        <a href="">
+          <div class="social-networks__instagram"></div>
+        </a>
+        <a href="">
+          <div class="social-networks__pinterest"></div>
+        </a>
       </div>
     </div>
     <p class="footer__copyright">© 2019 Axion. All rights reserved.</p>
-    <img src="" alt="" class="whs-logo">
+    <img src="./img/whs-logo.png" alt="whs-logo" class="whs-logo">
   </footer>
 </body>
 </html>
